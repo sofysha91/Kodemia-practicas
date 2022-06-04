@@ -1,0 +1,73 @@
+.bandera{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    margin-bottom: 100px;
+    
+}
+
+.colorblue{
+    background-color: blue;
+    flex-grow: 1;
+    
+}
+.colorwhite{
+    background-color: white;
+    flex-grow: 1;
+    
+}
+.colorred{
+    background-color: red;
+    flex-grow: 1;
+    
+}
+
+.banderasuecia{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    background-color: yellow;
+    flex-direction: column;
+    
+
+    
+}
+.bloqueup{
+    display: flex;
+    flex-grow: .6;
+    justify-content: space-between;
+}
+.bloquedown{
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-between;
+}
+.azulizq{
+    background-color: rgba(36, 107, 201, 0.877);
+    flex-basis: 31%;
+}
+.azulder{
+    background-color: rgba(36, 107, 201, 0.877);
+    flex-basis: 56%;
+}
+
+.amarillo{
+    background-color: yellow;
+    flex-basis: 10%;
+}
+.green{
+    background-color: green;
+    flex-grow: 1;
+}  
+.escudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.escudo img{
+    width: 120px;
+}

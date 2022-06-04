@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ededed;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+}
+header{
+    background-color: #fff059;
+    width: 100%;
+    height: 250px;
+}
+header .logo{
+    height: 100px;
+    width: 70%;
+    margin: 0 auto;
+}
+header .logo img {
+    margin-top: 20px;
+}
+header .logo a {
+    float: right;
+}
+header .logo a img {
+   width: 16px;
+}
+main{
+    width: 420px;
+    margin: -80px auto 0 auto;
+}
+.card{
+    background-color: white;
+    min-height: 100px;
+    padding: 80px 60px;
+    position: relative;
+    border-radius:6px;
+}
+h1{
+    margin-bottom: 26px;
+}
+.login-email input, .login-email button, button.button-bottom{
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.login-email label{
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+}
+input#username {  
+    font-weight: 400;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+} 
+button {  
+    margin: 20px 0 0 0;    
+    border: none;    
+}
+button.blue {
+    background-color: #3483FA;
+    color: white;
+}
+button.blue:hover {
+    background-color: #2968c8;
+}
+button.white {
+    background-color: white;
+    color: #3483FA;
+}
+button.white:hover{
+    background-color: rgba(65,137,230,.1);
+}   
+button.button-bottom {    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    color: #3483FA;
+    border-top: 1px solid rgba(0,0,0,.07);
+}
+button.button-bottom:hover {
+    background-color: #f5f5f5;
+}
+p.terms {
+    margin-top: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;    
+}
+a, a:hover, a:link, a:visited {
+    color: #3483fa;
+    text-decoration: none;
+}
+footer {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+footer p{
+    font-size: 14px;
+    color: black;
+}
+footer p.copyright{
+    font-size: 12px;
+    color:#666;
+}

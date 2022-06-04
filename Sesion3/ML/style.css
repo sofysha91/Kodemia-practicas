@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ededed;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+}
+header{
+    background-color: #fff059;
+    width: 100%;
+    height: 100px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.search{
+    display: flex;
+}
+.search .div-logo, .search form, .disney{
+    flex-grow: 1;
+    margin-top: 10px;  
+}
+.search form{
+    flex-grow: 6;
+    
+}
+.disney img{
+    max-width: 340px;
+    max-height: 39px;
+}
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }  
+ 
+  .icon {
+    padding: 10px;
+    background: gainsboro;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }  
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.main-content{
+    margin-top:100px;
+    min-height: 100px;
+    display: flex;
+}
+aside{
+    flex-grow: 1;
+   /* width: 8%;*/
+
+}
+main{
+    flex-grow: 3;
+    background-color: #FFF;
+}
+
+p.terms {
+    margin-top: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;    
+}
+
+footer {
+    background: white;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    margin-top:100px;
+}
+footer ul{
+    font-size: 14px;
+    list-style: none;
+    display: flex;
+}
+footer p.copyright{
+    font-size: 12px;
+    color:#666;
+}
+
+.nav-bar {
+    display: flex;
+}
+button, .btn-location {
+    flex-basis: 10%;
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    display: flex;
+}
+
+.nav-bar ul, .footer-nav{
+    list-style: none;
+    margin-left: 80px;
+}
+.footer-nav{
+    margin-left: 0;
+}
+.nav-bar ul li, .footer-nav li{
+    display: inline-block;
+    padding-right: 16px;
+}
+.nav-bar ul li a, .footer-nav li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #666;
+}
+.nav-bar ul li a img{
+    width: 20px;
+}
+.nav-bar ul.user{
+    margin-left: 200px;
+}
+
+/*Aside*/
+.cuadro-envios{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-color: black;
+    border-width: 10px;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    font-size: 12px;
+
+}
+.cuadro-lista{
+    display: flex;
+    flex-direction: column;
+    border-color: black;
+    border-width: 10px;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+
+}
+#logofull{
+    display: flex;
+    width: 45px;
+    height: 15px;
+    align-items: center;
+    padding: 3px;
+}
+#logocomprainter{
+    display: flex;
+    width: 150px;
+    height: 30px;
+    align-items: center;
+    padding: 3px;
+
+}
+
+.textoenviogratis{
+    display: flex;
+    flex-basis: 200px;
+    padding: 5px;
+}
+.tedaenvios{
+    display: flex;
+    align-items: center;
+
+}
+.textoh4{
+    display: flex;
+    flex-basis: content;
+    font-weight: 50;
+
+}
+.textoh4, h4{
+    display: flex;
+    height: fit-content;
+}
+.boton-switch{
+    display: flex;
+    padding: 3px;
+    flex-basis: content;
+    align-items: center;
+}
+.lbl-switch{
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    background: lightgray;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    top: 15px;
+}
+.lbl-switch:after{
+    position: absolute;
+    content: ' ';
+    width: 15px;
+    height: 14px;
+    background-color: white;
+    border-radius: 100px;
+    top: 1px;
+    left: 3px;
+    transition: .3s;
+}
+#btn-switch{
+    display: none;
+}
+.fullenviosizq{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-color: black;
+    border-width: 10px;
+    justify-content: left;
+
+}
+
+.cuadro-lista{
+
+    display: flex;
+    flex-direction: column;
+}
+.item-lista{
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cuadro-lista ul{
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+.renglon-lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+aside,.renglon-lista, .item {
+    color: black;
+    list-style: none;
+    padding: 3px; 
+    padding-left: 0px; 
+}
+.renglon-lista, .cantidad-item {
+    color: gray;
+}
+.filter-grey{
+    color: #999;
+}
+
+/* Main */
+.opciones{
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(237, 237, 237, 1);
+    font-size:small;
+    font-style:bold;
+    display: flex;
+    justify-content: flex-end;
+}
+#sort{
+    border: none;
+    outline: none;
+    background-color: rgba(237, 237, 237, 1);
+    font-family: 'Lato', sans-serif;
+    display: flex;
+}
+.carrusel-marcas{
+    display: flex;
+    background-color: rgba(237, 237, 237, 1);
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: none;
+    display: flex;
+    flex-flow: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+}
+.caja img{
+    width: 80%;
+    height: 80%;
+    flex-grow: 1;
+}
+.layout-busqueda{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.resultado{
+    width: 100%;
+    height: 250px;
+    flex-flow: row;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    border-bottom-style: solid;
+    border: 1px solid #DDD;
+}
+.resultado img{
+    width: auto;
+    height: auto;
+    max-width: 220px;
+}
+.texto{
+    flex-direction: column;
+    padding: 20px;
+}
+.descripcion {
+    width: 70%;
+    text-align: justify;
+   
+}
+.vendedor {
+    font-size: xx-small;
+    margin-bottom: 10px;
+}
+.precio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.precio-ant{
+    font-size: x-small;
+    text-decoration: line-through;
+}
+.precio-act{
+    font-size: x-large;
+}
+.descuento{
+    color: green;
+    margin-left: 20px;
+}
+.mensualidades{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-size: small;
+    margin-bottom: 10px;
+}
+.men-verde{
+    color: green;
+    margin-left: 2px;
+}
+.envio{
+    color: green;
+    flex-direction: row;
+}
+.envio img{
+    width: 50px;
+    height: 20px;
+}
+.imagen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.stars{
+    list-style: none;
+    margin-left: 200px;
+}
+.stars li{
+    display: inline-block;
+}
+.stars li img{
+    width: 16px;
+}
