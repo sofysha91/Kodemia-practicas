@@ -1,0 +1,155 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+h3{
+    color: #4a25aa;
+    margin: 10px 0;
+}
+h2{
+    color: #323c61;
+}
+p{
+    color:#707790;
+    padding-top: 10px;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+section.ctas-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+section.ctas-container h2 {
+    margin-bottom: 60px;
+}
+
+div.ctas {
+    width: 100%;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+div.ctas .cta {
+    border: 2px solid #f2f4f8;
+    background-color: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.ctas .cta div.image {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+div.ctas .cta div.image img {
+    width: 100%;
+}
+div.ctas .cta div.button {
+    background-color: #f2f4f8;
+    border-radius: 16px;
+    padding: 24px;
+}
+.btn-cta{
+    margin-top: 40px;
+    padding: 12px 0;
+    border-radius: 99px;
+    background-color: #4a25aa;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.a-conoce{
+    margin-top: 15px;
+    display: block;
+    color: #4a25aa;
+    padding: 5px 0;
+}
+
+footer{
+    width: 100%;
+    padding-top: 40px;
+}
+footer .footer-nav{
+    margin: 0 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+footer a.logo {
+    margin-bottom: 40px;
+    display: block;
+}
+footer a.logo img {
+    height: 32px;
+    max-width: 100%;
+}
+footer .footer-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #4a25aa;
+    font-size: 16px;
+    line-height: 1.5;
+}
+footer ul li{
+    list-style: none;
+}
+footer a.footer-link {
+    display: block;
+    margin-bottom: 10px;
+    color: #323c61;
+    font-weight: 400;
+    text-decoration: none;
+}
+footer .copy{
+    color: #323c61;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*Responsive*/
+@media only screen and (min-width:768px) {
+    div.ctas {
+        flex-direction: row;
+        justify-content: center;        
+    }
+    .btn-cta{        
+        margin-right: 0;
+        margin-left: 0;
+    
+    }
+    footer{        
+        padding-top: 80px;
+    }
+    footer .footer-nav{
+        margin: 0 auto;
+    }
+    footer .footer-nav{
+        flex-direction: row;
+    }
+    footer .footer-nav div.ul-nav, footer .footer-nav .logo{
+        flex: 1;
+    }
+}
+
+@media only screen and (min-width:1200px) {}

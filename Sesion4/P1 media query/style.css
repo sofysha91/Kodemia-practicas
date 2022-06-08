@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.element{
+    width: 100px;
+    height: 100px;    
+}
+.orange{
+    background-color: #FFC300;
+}
+.green{
+    background-color: #94F73D;
+}
+.purple{
+    background-color: #C16DF8;
+}
+
+@media only screen and (min-width:768px){
+    .container{
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .container{
+        flex-direction: row;
+        align-items: stretch;
+        
+    height: 900px;
+    }
+    .element{
+        height: auto;
+    }
+}
