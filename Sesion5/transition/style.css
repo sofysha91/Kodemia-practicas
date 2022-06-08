@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animated-item {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation: my-animation 5s infinite;
+    position: relative;
+}
+
+
+/*Animation*/
+@keyframes my-animation {
+    0% {
+        top: 0px; 
+        left: 0px;      
+    }
+
+    50% {
+        top: 200px;
+        left: 600px;
+        background-color: blue;
+        border-radius: 50%;
+    }
+
+    100% {
+        top:0px;
+        left:0px;
+    }
+}
