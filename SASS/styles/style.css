@@ -1,0 +1,83 @@
+.btn {
+  padding: .5rem 1rem;
+  min-width: 200px;
+  border: 2px solid blue;
+  border-radius: .5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  padding: 1rem;
+  background-color: blue;
+}
+
+.card1 {
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  padding: 1rem;
+  background-color: blue;
+}
+
+.container {
+  background-color: #aaaaaa;
+  height: 800px;
+}
+
+.container ul li {
+  padding: .5rem;
+}
+
+.container ul li.primary {
+  background-color: #377;
+}
+
+.container ul li.secondary {
+  background-color: tomato;
+}
+
+.container ul + a {
+  padding: .5rem 1rem;
+  min-width: 200px;
+  border: 2px solid blue;
+  border-radius: .5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem;
+  background-color: aqua;
+}
+
+.container ul + a:hover {
+  background-color: green;
+}
+
+.btn-primary {
+  content: "";
+}
+
+.btn-secondary {
+  content: "";
+}
+
+.btn-disable {
+  content: "";
+}
+
+.btn-primary {
+  background-color: deeppink;
+}
+
+.btn-secondary {
+  background-color: green;
+}
+
+.btn-disable {
+  background-color: #CCC;
+}
+/*# sourceMappingURL=style.css.map */

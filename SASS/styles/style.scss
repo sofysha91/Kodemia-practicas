@@ -1,0 +1,70 @@
+@import "variables";
+$card-color: blue;
+$secondary: tomato;
+
+@mixin base-button-props{
+    padding: .5rem 1rem;
+    min-width: 200px;
+    border: 2px solid $card-color;
+    border-radius: .5rem;
+    flex: 1;
+}
+.btn{
+    @include base-button-props;
+}
+
+.card{
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    padding: 1rem;
+    background-color: $card-color;
+}
+
+.card1{
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    padding: 1rem;
+    background-color: $card-color;
+}
+
+.container{
+    background-color: #aaaaaa;
+    height: 800px;
+    ul {
+        li{
+            padding: .5rem;
+            &.primary{
+                background-color: #377;    
+            }
+            &.secondary{
+                background-color: $secondary;    
+            }
+        }
+        + a{
+            @include base-button-props;
+            padding: 1rem;
+            background-color: aqua;
+            &:hover{
+                background-color: green;
+            }
+        }
+    }
+}
+
+$types-of-buttons: "primary", "secondary", "disable";
+
+@each $type in $types-of-buttons{
+    .btn-#{$type}{
+        content: "";
+    }
+}
+
+$types-of-buttons: ("primary": $primary-color, "secondary":$secondary-color, "disable": #CCC);
+
+@each $type, $color in $types-of-buttons{
+    .btn-#{$type}{
+        background-color: $color;
+    }
+}

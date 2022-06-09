@@ -11,7 +11,7 @@ body{
     width: 60px;
     text-align: center;
     color: #f00;
-    animation: my-animation 10s infinite;
+    animation: my-animation 20s infinite;
     position: relative;
     font-weight: bold;
 }
@@ -19,7 +19,7 @@ body{
     border: 10px solid #f00;
     border-top: 4px solid;
     border-radius: 50%;
-    animation: my-color 10s infinite;
+    animation: my-color 20s infinite;
     height: 2px;
     width: 48px;
 }
