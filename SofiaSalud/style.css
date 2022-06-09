@@ -7,7 +7,11 @@
 body {
     font-family: 'Overpass', sans-serif;
 }
-
+h1.banner-title{
+    color: #4a25aa;
+    font-size: 40px;
+    text-align: left;
+}
 h2,
 h3 {
     color: rgb(74, 37, 170);
@@ -25,6 +29,19 @@ h2 {
 p {
     color: #707790;
     padding-top: 10px;
+}
+p.banner-p{
+    color: #4a25aa;
+    font-size: 24px;
+    text-align: left;
+}
+.main-cta{
+    background-color: #4a25aa;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 100px;
+    font-size: 18px;
+    margin-top: 40px;
 }
 
 .container {
@@ -45,6 +62,11 @@ header{
     display: block;
     padding: 16px 32px;
     /*opacity: .7; /* la claridad del objeto se mide del 0 al 1 */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    width: 100%;
 }
 header nav{
     max-width: 100%;
@@ -59,10 +81,31 @@ header nav{
     margin: 0 auto;
 }
 header nav .logo{
-    max-width: 80px;
+    max-width: 98px;
     width: 100%;
     display: flex;
     align-items: center;
+}
+.banner{
+    position: relative;
+}
+.banner img.banner-desktop{
+    display: none;
+}
+.banner img.banner-mobile{
+    display: block;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 160px;
+    padding-top: 40px;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    gap:16px;
 }
 img{
     max-width: 100%;
@@ -76,6 +119,7 @@ img{
 }
 ul.opciones{
     list-style: none;
+    padding-top: 10px;
 }
 .opc{
     display: inline-block;
@@ -283,6 +327,20 @@ footer .copy {
     }
     .hamburguesa{
         display: none;
+    }
+    .banner img.banner-desktop{
+        display: block;
+    }
+    .banner img.banner-mobile{
+        display: none;
+    }
+    .content{
+        align-items: flex-start;
+        margin: 0 auto;
+        left: 10%;
+    }
+    h1.banner-title{
+        font-size: 48px;
     }
 }
 
