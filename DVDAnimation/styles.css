@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+}
+.animated-item{
+    width: 60px;
+    text-align: center;
+    color: #f00;
+    animation: my-animation 10s infinite;
+    position: relative;
+    font-weight: bold;
+}
+.cd{
+    border: 10px solid #f00;
+    border-top: 4px solid;
+    border-radius: 50%;
+    animation: my-color 10s infinite;
+    height: 2px;
+    width: 48px;
+}
+p.title {
+    font-size: 36px;
+    font-style: italic;
+}
+p.bottom{
+    font-size: 14px;
+}
+
+/*Animation*/
+@keyframes my-animation {
+    0% {
+        top: 0px; 
+        left: 0px;              
+    }
+    20% {
+        left: 20%;
+        top: 100%;
+        transform:translate(-100%,-100%);
+        color: blue;      
+    }
+
+    40% {
+        top: 0%;
+        left: 80%;
+        transform:translate(100%,0);
+        color: purple;
+    }
+    
+    60% {
+        top: 80%; 
+        left: 0; 
+        transform:translate(0,0);          
+        color: green;   
+    }
+    80%{
+        top:40%;
+        left:100%;
+        transform:translate(-150%,0);
+        color: yellow;
+    }
+
+    100% {
+        top:0px;
+        left:0px;
+    }
+}
+
+@keyframes my-color {
+    0% {  
+            
+    }
+    20% {
+        
+        border-color: blue;      
+    }
+
+    40% {
+        
+        border-color: purple;
+    }
+    
+    60% {
+         
+        border-color: green;   
+    }
+    80%{
+        
+        border-color: yellow;
+    }
+
+    100% {
+        border-color: red; 
+    }
+}
