@@ -43,6 +43,38 @@ p.banner-p{
     font-size: 18px;
     margin-top: 40px;
 }
+.mobile-menu{
+    position: absolute;
+    width: 100%;
+    background-color: #4a25aa;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 34px 16px 24px;
+    display: none;
+}
+ul.ul-mobile-menu {
+    list-style: none;
+}
+li.menu-item {
+    font-size: 32px;
+    line-height: 150%;
+    margin-top: 24px;
+    /* color: white; */
+}
+ul.ul-mobile-menu li.menu-item a {
+    text-decoration: none;
+    color: white;
+}
+ul.ul-mobile-menu li.menu-item.logo {
+    height: 24px;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+ul.ul-mobile-menu small{
+    color: #ede9f7;
+    font-size: 16px;
+} 
 
 .container {
     max-width: 1080px;
@@ -100,7 +132,7 @@ header nav .logo{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 160px;
+    top: 100px;
     padding-top: 40px;
     position: absolute;
     width: 100%;
@@ -116,6 +148,7 @@ img{
 .hamburguesa{
     width: 32px;  /* el ancho de los objetos*/
     height: 32px; /* el alto de los objetos*/
+    z-index: 99;
 }
 ul.opciones{
     list-style: none;
@@ -282,6 +315,27 @@ footer .copy {
     text-align: center;
 }
 
+
+/*Mobile Menu */
+.label-menu .close-menu{
+    display: none;
+}
+input#toggle-menu {
+    display: none;
+    z-index: 9;
+    position: relative;
+ }
+ #toggle-menu:checked ~ .mobile-menu, #toggle-menu:checked + label img.close-menu{
+     display: block;
+ }
+ #toggle-menu:checked + label img.open-menu{
+    display: none;
+}
+ .label-menu{
+    z-index: 9;
+    position: relative;
+ }
+
 /*Responsive*/
 @media only screen and (min-width:768px) {
     div.ctas {
@@ -293,6 +347,9 @@ footer .copy {
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+    .content{
+        top:160px;
     }
 
     .Grid1 {
