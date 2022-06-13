@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0f1424;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 1200px;
+  padding: 32px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard .profile {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #1c1f4a;
+  border-radius: 16px;
+  color: #FFF;
+}
+
+.dashboard .profile .background-profile {
+  height: 60%;
+  background: #5847eb;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 32px;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard .profile .background-profile .photo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 60px;
+  max-height: 60px;
+  border: 3px solid #FFF;
+  border-radius: 30px;
+}
+
+.dashboard .profile .background-profile .photo img {
+  max-width: 100%;
+}
+
+.dashboard .profile .background-profile .reporter {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.dashboard .profile .background-profile .reporter p {
+  font-size: 18px;
+}
+
+.dashboard .profile .background-profile .reporter p small {
+  font-size: 12px;
+  color: #bdc1ff;
+}
+
+.dashboard .profile .frequency {
+  padding: 16px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #bdc1ff;
+}
+
+.dashboard .profile .frequency .active {
+  color: #FFF;
+}
+
+.dashboard .trackers {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard .trackers .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 20px;
+}
+
+.dashboard .trackers .row .tracker {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  border-radius: 16px;
+  height: auto;
+  overflow: hidden;
+}
+
+.dashboard .trackers .row .tracker .background {
+  width: 100%;
+  height: 50px;
+  border-radius: 16px 16px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 0 12px;
+  z-index: -1;
+}
+
+.dashboard .trackers .row .tracker .background img {
+  width: 60px;
+  height: 60px;
+  margin: -5px 0 0 0;
+}
+
+.dashboard .trackers .row .tracker .background.work {
+  background-color: #ff8c66;
+}
+
+.dashboard .trackers .row .tracker .background.play {
+  background-color: #56c2e6;
+}
+
+.dashboard .trackers .row .tracker .background.study {
+  background-color: #ff5c7c;
+}
+
+.dashboard .trackers .row .tracker .background.exercise {
+  background-color: #4acf81;
+}
+
+.dashboard .trackers .row .tracker .background.social {
+  background-color: #7536d3;
+}
+
+.dashboard .trackers .row .tracker .background.self-care {
+  background-color: #f1c65b;
+}
+
+.dashboard .trackers .row .tracker .content {
+  background-color: #1c1f4a;
+  margin-top: -10px;
+  border-radius: 16px;
+  padding: 32px;
+  color: #FFF;
+  z-index: 9;
+  position: relative;
+}
+
+.dashboard .trackers .row .tracker .content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard .trackers .row .tracker .content .time {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #bdc1ff;
+}
+
+.dashboard .trackers .row .tracker .content .time .hours {
+  font-size: 32px;
+  color: #FFF;
+}
+
+@media only screen and (min-width: 768px) {
+  .dashboard {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .dashboard .profile .background-profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    gap: 20px;
+    height: 70%;
+  }
+  .dashboard .profile .background-profile .photo {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 40px;
+  }
+  .dashboard .profile .background-profile .reporter p {
+    font-size: 32px;
+  }
+  .dashboard .profile .frequency {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 32px;
+    gap: 10px;
+  }
+  .dashboard .trackers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dashboard .trackers .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .dashboard .trackers .row .tracker .content .time {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
