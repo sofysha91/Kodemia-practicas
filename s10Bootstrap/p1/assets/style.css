@@ -1,0 +1,22 @@
+nav {
+  height: 80px;
+}
+
+section {
+  height: auto;
+}
+
+section article {
+  height: 150px;
+}
+
+aside {
+  min-height: 200px;
+  height: auto;
+}
+
+footer > div {
+  background-color: aqua;
+  height: 80px;
+}
+/*# sourceMappingURL=style.css.map */
