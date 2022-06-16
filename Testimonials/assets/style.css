@@ -1,0 +1,30 @@
+.testimonial-container {
+  min-height: 300px;
+  background-color: aquamarine;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.testimonial-container.full {
+  height: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .testimonial-container {
+    margin-bottom: 0;
+    color: #cfcfcf;
+  }
+  .testimonial-container.violet {
+    background-color: #7541c8;
+  }
+  .testimonial-container.light-gray {
+    background-color: #48556a;
+  }
+  .testimonial-container.dark-gray {
+    background-color: #19212e;
+  }
+  .testimonial-container.white {
+    background-color: white;
+  }
+}
+/*# sourceMappingURL=style.css.map */

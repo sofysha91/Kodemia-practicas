@@ -1,0 +1,336 @@
+/*Seccion Socios*/
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Producto Destacado*/
+.producto-destacado {
+    text-align: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+    position: relative;
+    height: auto;
+    h2{
+        font-family: $abril;
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        padding-top: 8px;
+    }
+
+    .imagen-fondo {
+        object-fit: contain;
+        overflow: hidden;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+
+        img {
+            height: 45%;
+            width: 100%;
+            opacity: .7;
+            object-fit: cover;
+        }
+    }
+
+    .destacado-contenedor {
+        display: flex;
+        flex-direction: column;
+
+        .destacado-items {
+            padding: 0 32px 20px 32px;
+            color: #FFF;
+            font-size: 16px;
+            font-family: $raleway;
+
+            p,
+            h3 {
+                margin-bottom: 16px;
+            }
+            .destacado-img{
+                width: 100%;
+            }
+
+            .nombre-destacado,
+            .destacado-precio {
+                font-family: $abril;
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            .valoracion {
+                font-size: 12px;
+            }
+        }
+
+        .destacado-categorias {
+            ul {
+                margin-top: 30px;
+                display: flex;
+                gap: 12px;
+                justify-content: center;
+
+                li {
+                    font-size: 12px;
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        .btn-agregar-a-lista {
+            width: 100%;
+            display: block;
+            margin: 30px auto;
+            padding: 8px 32px;
+            background: #000;
+            border-radius: 8px;
+        }
+    }
+}
+
+/*Socios */
+.socios {
+    width: 100%;
+    text-align: center;
+    padding: 32px 18px;
+    display: block;
+    background: linear-gradient(180deg, #6F6F6F 1.72%, #FaFaFa 98.63%);
+    overflow: hidden;
+
+    h2 {
+        font-family: $abril;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+
+    .socios-flex {
+        display: flex;
+        justify-content: center;
+        gap: 140px;
+        margin-bottom: 30px;
+
+        .socio {
+            width: 100%;
+            padding: 0 32px;
+            height: 100px;
+            background: #000000;
+            border-radius: 100px 15px 15px 100px;
+            display: flex;
+
+            &.lg {
+                display: none;
+            }
+
+            .socio-logo {
+                width: 80px;
+                height: 80px;
+                background: rgba(255, 255, 255, 0.5);
+                border: 0.5px solid #FFFFFF;
+                border-radius: 40px;
+                margin-top: 10px;
+                margin-left: -20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .socio-nombre {
+                font-family: $raleway;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 38px;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                text-transform: uppercase;
+
+                .nombre {
+                    display: flex;
+                    align-items: baseline;
+
+                    span.capital {
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+
+        &.logo-derecha {
+            .socio {
+                flex-direction: row-reverse;
+                border-radius: 15px 100px 100px 15px;
+
+                .socio-logo {
+                    margin-right: -20px;
+
+                    &.logo-izq {
+                        justify-content: flex-start;
+
+                        img {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+/*Footer*/
+footer {
+    padding: 32px 18px;
+    background: linear-gradient(180deg, #fafafa 0%, #d6d6df 50%, #6f6f6f 100%);
+
+    .footer-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+
+        .footer-items {
+            font-family: 'Poppins';
+            font-size: 14px;
+            line-height: 18px;
+
+            .redes-sociales {
+                display: flex;
+                gap: 30px;
+                justify-content: center;
+
+                .logo-redes {
+                    border: 1px solid #000;
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 16px;
+                }
+            }
+
+            .footer-info {
+                margin-bottom: 30px;
+
+                .titulo-links {
+                    font-family: $abril;
+                    font-size: 20px;
+                    line-height: 1.5rem;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    list-style: none;
+
+                    .links-footer {
+                        margin: 10px auto;
+
+                        a {
+                            text-decoration: none;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .devkoore {
+        text-align: center;
+        margin: 60px auto 30px auto;
+    }
+}
+
+
+/*Responsivo*/
+@media only screen and (min-width:768px) {
+    /*Producto Destacado*/
+    .producto-destacado{
+        .imagen-fondo img{
+            height: 100%;
+        }
+        .destacado-contenedor {
+            flex-direction: row-reverse;
+            .destacado-items{
+                flex: 1;
+                margin-top: 40px;                
+                text-align: left;
+                .destacado-categorias ul{
+                    list-style-position: inside;
+                    justify-content: left;
+                }
+            }
+            .btn-agregar-a-lista{
+                text-align: center;
+            }
+        }
+    }
+
+    /*Socios*/
+    .socios {
+        .socios-flex {
+            margin-bottom: 50px;
+
+            .socio {
+                width: 360px;
+                border-radius: 100px;
+
+                &.lg {
+                    display: flex;
+                }
+            }
+
+            &.logo-derecha {
+                justify-content: space-between;
+                width: 110%;
+                margin-left: -5%;
+
+                .socio {
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
+
+    /*Footer*/
+    footer {
+        padding: 32px 18px;
+
+        .footer-flex {
+            flex-direction: row;
+            justify-content: space-around;
+
+            .footer-items {
+                display: flex;
+                flex-direction: column;
+
+                .footer-menu {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    gap: 50px;
+                    /* width: 100%; */
+                }
+
+                .copyright {
+                    align-self: baseline;
+                }
+            }
+        }
+    }
+
+}
